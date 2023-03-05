@@ -21,8 +21,8 @@ CONFIG['warnflags'].slice!(/ -Wmissing-noreturn/)
 
 have_header('stdatomic.h')
 have_header('sys/epoll.h')
-have_header('openssl/ssl.h')
-have_library('ssl')
+# have_header('openssl/ssl.h')
+# have_library('ssl')
 
 create_makefile(File.join(extension_name, extension_name))
 
